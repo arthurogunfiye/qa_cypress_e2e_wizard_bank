@@ -11,10 +11,7 @@ export default class AccountPageObject {
   }
 
   clickWithdrawButton() {
-    return cy
-      .get('button[ng-click="withdrawl()"]')
-      .contains('Withdraw')
-      .click();
+    return cy.get('button[ng-class="btnClass3"]').contains('Withdrawl').click();
   }
 
   verifyAccountNumber(accountNumber) {

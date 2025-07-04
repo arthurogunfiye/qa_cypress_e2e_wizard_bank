@@ -16,8 +16,10 @@ export default class HomePageObject {
   }
 
   getBankManagerLoginButton() {
-    return cy.get('button[ng-click="manager()"]').contains('Bank Manager Login')
-      .click;
+    return cy
+      .get('button[ng-click="manager()"]')
+      .contains('Bank Manager Login')
+      .click();
   }
 
   selectCustomerName() {
